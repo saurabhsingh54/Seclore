@@ -1,0 +1,35 @@
+Messenger App
+Your application is divided into three parts
+1. Client -> main method
+2. Application class -> will call the pojo and other classes
+3. Pojo classes -> POJO and business logic 
+
+We have to create the messaging app which allow you
+to send messages in specific type.
+Available type : 1. SMS message 2. Email 3.Courier 
+
+
+
+allow user to make a choice to send message by providing  option to choose the message type where inputs are ::  to (address) and message body
+
+i.e. method :: sendMessage(String to , String message)
+
+Note : Your application have to accept changes. in case of new type of message is introduce in 
+future there should be no issues to intigrate the same.
+
+classes
+com.seclore.pojo
+	all types of messages - classes
+	SMSMessage
+	{
+		public void sendMessage(String to , String message)
+		{
+			sysout("sending SMS Message to :: "+ to);
+			Sysout("Message :: "+ message);
+		}
+	}
+com.seclore.application
+	MessengerApp
+com.seclore.main
+	MessengerMain -> accept to--> and message--> 	
+  
